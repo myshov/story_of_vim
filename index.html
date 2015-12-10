@@ -1,21 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>The Story of Vim - Shower Presentation</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen.css">
+	<link rel="stylesheet" href="node_modules/shower-bright/styles/screen.css">
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>The Story Of Vim</h1>
+		<p></p>
 	</header>
 	<section class="slide cover" id="Cover"><div>
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="">
+		<div class="title">
+            <h2>The Story of Vim</h2>
+            <p>The Entertaining Narrative About Some Small Editor</p>
+        </div>
+		<img src="pictures/cover.png" alt="">
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
@@ -33,22 +35,44 @@
 				color:#FFF;
 				font-style:italic;
 				font-size:20px;
+                background-color: #000;
 				}
 				#Cover p a {
 					color:#FFF;
 					}
+			#Cover img {
+				opacity: 0.5;
+				}
+
+            #Cover .title {
+                background-color: #000;
+                padding: 10px 20px 30px 10px;
+            }
+
+            #Itsfun a {
+                color: #000;
+            }
 		</style>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Shower Key Features</h2>
+        <h2>Ключевые особенности</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>All modern browsers are supported</li>
-			<li>Slide themes are separated from engine</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
+			<li>Ориентированный на программистов</li>
+			<li class="next">Расширяемый (Vimscript, Python, Ruby, Lua, Tcl)</li>
+			<li class="next">Не требовательный к ресурсам</li>
+			<li class="next">Доступный везде (Linux, Mac OS X, Windows etc.)</li>
+			<li class="next">Модальный, экранно-ориентированный</li>
 		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+        <!--<p class="note">Some note here.</p>-->
+	</div></section>
+	<section class="slide" id="Itsfun"><div>
+		<h2>It's fun!</h2>
+		<figure>
+			<blockquote>
+				<p>Editing text is like a game to me now. I actively enjoy it &ndash; which is pretty ridiculous, when you think about it.</p>
+			</blockquote>
+            <figcaption><a href="http://stackoverflow.com/a/2781607">Rich</a></figcaption>
+		</figure>
 	</div></section>
 	<section class="slide"><div>
 		<h2>Plain Text on Your Slides</h2>
